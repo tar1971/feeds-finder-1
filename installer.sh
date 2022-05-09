@@ -1,6 +1,6 @@
 #!/bin/bash
 ######################################################################################
-## Command=wget https://raw.githubusercontent.com/emil237/feeds-finder/main/installer.sh -O - | /bin/sh
+## Command=wget https://raw.githubusercontent.com/tar1971/feeds-finder-1/main/installer.sh -O - | /bin/sh
 ##
 ###########################################
 ###########################################
@@ -9,7 +9,7 @@
 
 MY_IPK_PY2="feeds-finder_V1.6_py2_all.ipk"
 MY_IPK_PY3="feeds-finder_V1.6_py3_all.ipk"
-MY_URL="https://raw.githubusercontent.com/emil237/feeds-finder/main"
+MY_URL="https://raw.githubusercontent.com/tar1971/feeds-finder-1/main"
 PYTHON_VERSION=$(python -c 'import sys; print(sys.version_info[0])')
 
 ######################################################################################
@@ -30,7 +30,7 @@ echo "   Install Plugin please wait "
 cd /tmp 
 
 set -e
-    
+#################################    
   wait
      
 if python --version 2>&1 | grep -q '^Python 3\.'; then
@@ -51,7 +51,7 @@ rm -f /tmp/$MY_IPK_PY3
 echo ">>>>  SUCCESSFULLY INSTALLED <<<<"
 fi
 		echo "********************************************************************************"
-echo "   UPLOADED BY  >>>>   EMIL_NABIL " 
+echo "   UPLOADED BY  >>>>   TAR_TAR " 
 sleep 4;                         
 echo $MY_EM
 ###################                                                                                                                  
